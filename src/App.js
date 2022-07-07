@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './Components/Header';
+import Slider from './Components/Slider';
+
+var pdesign ={
+  width:'950px',
+  backgroundColor:'gray',
+  padding:'10px'
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      <Header />
+      <Slider />
+
+      <h2 style={{color:'orange', backgroundColor:'cyan'}}>Heading</h2>
+
+      <p style={pdesign}>
+        the quick brown fox jumps over the lazy dog the quick brown fox jumps over the lazy dog
+        the quick brown fox jumps over the lazy dog the quick brown fox jumps over the lazy dog
+        the quick brown fox jumps over the lazy dog the quick brown fox jumps over the lazy dog
+        the quick brown fox jumps over the lazy dog the quick brown fox jumps over the lazy dog
+        the quick brown fox jumps over the lazy dog the quick brown fox jumps over the lazy dog
+        the quick brown fox jumps over the lazy dog the quick brown fox jumps over the lazy dog
+        the quick brown fox jumps over the lazy dog the quick brown fox jumps over the lazy dog
+        the quick brown fox jumps over the lazy dog the quick brown fox jumps over the lazy dog
+      </p>
+
+
+      
     </div>
   );
 }
